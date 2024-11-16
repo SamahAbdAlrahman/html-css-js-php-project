@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contact us</title>
+    <link type="text/css" rel="stylesheet" href="assets/css/contactdesigns.css">
+    <script>
+        function errorMSG() {
+            let m;
+            m = "Error,you should enter this value";
+
+            if(document.querySelector('input').value=="")
+            {
+                document.getElementById("name").innerText = m;
+            }
+
+        }
+            function errorMSG1()
+            {
+                let m;
+                m="Error,you should enter this value";
+              /*  alert(document.querySelector('input').value);*/
+                if(document.querySelector('input').value=="")
+                {
+                    document.getElementById("email").innerText = m;
+                }
+
+            }
+            function errorMSG2()
+            {
+                let m;
+                m="Error,you should enter this value";
+                if(document.querySelector('input').value=="")
+                {
+                    document.getElementById("phone").innerText=m;
+                }
+
+
+            }
+    function    clrMSG()
+        {
+            document.getElementById("name").innerText=null;
+        }
+        function    clrMSG1()
+        {
+            document.getElementById("email").innerText=null;
+        }
+        function    clrMSG2()
+        {
+            document.getElementById("phone").innerText=null;
+        }
+    </script>
+</head>
+<body style="background-image: url('imgs/blackworldmab.jpg')">
+    
+<h2 style="position: center ;">CONTACT US </h2>
+<div style="position: absolute;top: 340px;left: 460px" >
+<form action="feedback.php" method="post">
+    <table>
+        <tr> <td> <input type="text" name="n" placeholder="Your Name*" style="height: 55px;width: 300px" required onblur="errorMSG();" onfocus="clrMSG()";> </td> </tr>
+        <tr> <td><p  style=" -webkit-text-fill-color:red;font-size: 13px"> </p> </td></tr>
+
+        <tr><td> <input type="text" placeholder="Your Email*" name="email" style="height: 55px;width: 300px" onblur="errorMSG1();" required onfocus="clrMSG1()";> </td></tr>
+        <tr> <td><p id="email" style=" -webkit-text-fill-color:red;font-size: 13px"> </p> </td></tr>
+
+        <tr> <td><input type="text" placeholder="Your Phone*" name="phone" style="height: 55px;width: 300px"  onblur="errorMSG2();" required onfocus="clrMSG2()";> </td> </tr>
+        <tr> <td><p id="phone" style=" -webkit-text-fill-color:red;font-size: 13px"> </p> </td></tr>
+    </table>
+
+<textarea type="text" cols="40" name="message"rows="13" style="position:absolute ;top:10px;left: 400px">
+
+    </textarea>
+
+<input type="submit" value="Send Message" style="background-color: gold ;width: 200px;height: 40px;top:240px ;position: absolute;left: 400px">
+
+</form>
+</div>
+
+</body>
+</html>
