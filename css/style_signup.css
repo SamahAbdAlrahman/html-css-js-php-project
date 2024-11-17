@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Kannada&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    --seccolor:rgba(255, 255, 255, 0.7);
+    --mainColor: #ffc800e0;
+    --font3:'Dancing Script', cursive;
+    --font2:  'Tiro Kannada', serif;
+    --green:#27ae60;
+    --black:#192a56;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(20,0,0,.23);
+}
+body{
+   
+    font-family: var(--font2);
+}
+.navbar{
+    z-index: 12;
+    background-color: rgba(18, 18, 1, 0.7466);
+     position: fixed;
+     width: 100%;
+     overflow: hidden;
+ 
+  
+ }
+  
+ .nav{
+     float:right;
+     width: 37% ;
+     text-align: right;
+     font-size:16px;
+     margin-top: 19px;
+     color:white;
+   font-family: var(--font3)
+     }
+
+ .logo{
+     font-family:'Dancing Script', cursive;
+ float: left;
+ width: 25% ;
+ color:#ffc8005b;
+ font-size:35px ;
+ margin-top:12px;
+ }
+ .container1{
+  
+    width: 70%;
+    margin: auto;
+} 
+.header_content{
+   position: sticky;;
+    background-image: url("../img/لا.jpg");
+    height: 765px;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: 0px -650px;
+    object-fit: cover;
+}
+.header_content .overlay {
+    background: linear-gradient(to BOTTOM,rgba(0, 0, 0, 0.9)60%,rgba(88, 76, 7, 0.59) 100%);
+    height: 100%;
+}
+/* 
+ */
+ /* Bordered form */
+ .p{
+  margin-bottom:9px;
+  color: white;
+  font-size: 29px;
+  font-family: var(--font3);
+ }
+ label{
+  color: white;
+ }
+ form {
+  padding-top: 200px;
+  text-align: center;
+  margin-top: -10px;
+  } 
+  
+  /* Full-width inputs */
+  input {
+    width:30%;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    display: inline-block;
+    border-radius: .5rem;
+    border: 3px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  /* Set a style for all buttons */
+  button {
+    background-color: var(--mainColor);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 30px;
+    border: none;
+    cursor: pointer;
+  border-radius: 1.5rem;
+    width: 15%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.5;
+   background-color: #27ae60;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+ 
+  
+  /* Add padding to containers */
+  .container2 {
+    width: 100%;
+    margin-top:-10px;
+  }

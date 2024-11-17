@@ -1,0 +1,220 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Kannada&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+table {
+    border-collapse: collapse;
+    font-family: Tahoma, Geneva, sans-serif;
+    margin-left: 30%;
+}
+
+table td {
+    padding: 30px;
+    width: 24%;
+}
+table thead td {
+    background-color: #54585d;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 13px;
+    border: 1px solid #54585d;
+}
+table tbody td {
+    color: #636363;
+    border: 1px solid #dddfe1;
+}
+table tbody tr {
+    background-color: #f9fafb;
+}
+table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+html{
+    --yellow:#fed330;
+    --red:#e74c3c;
+    --white:#fff;
+    --black:#222;
+    --light-color:#777;
+    --border:.22rem solid rgba(0, 0, 0, 0.637);
+    --seccolor:rgba(255, 255, 255, 0.7);
+    --mainColor: #ffc800e0;
+    --font3:'Dancing Script', cursive;
+    --font2:  'Tiro Kannada', serif;
+    --green:#27ae60;
+  
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(20,0,0,.23);
+}
+body{
+   
+    font-family: var(--font2);
+}
+.navbar{
+    z-index: 12;
+background-color: rgba(18, 18, 1, 0.452); 
+     position: fixed;
+     width: 100%;
+     overflow: hidden;
+ 
+  
+ }
+  
+ .nav{
+     float:right;
+     width: 37% ;
+     text-align: right;
+     font-size:16px;
+     margin-top: 19px;
+   
+     color: white;
+   font-family: var(--font3)
+     }
+
+ .logo{
+     font-family:'Dancing Script', cursive;
+ float: left;
+ width: 25% ;
+ color:#ffc8005b;
+ font-size:35px ;
+ margin-top:12px;
+ }
+ .container1{
+  
+    width: 70%;
+    margin: auto;
+} 
+.header_content{
+   position: relative;
+    background-image: url("../img/لا.jpg");
+    height: 100vh;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: 0px -450px;
+}
+.header_content .overlay {
+    background: linear-gradient(to BOTTOM,rgba(0, 0, 0, 0.9)60%,rgba(88, 76, 7, 0.59) 100%);
+    height: 100%;
+}
+.container2 {
+ 
+    width: 50;
+    margin: auto;
+  }
+
+
+  .header_content_item{
+    padding-top: 288px;
+   text-align: center;
+}
+
+.main-title{
+    font-size: 39px;
+    color: #fff;
+    width: 55%;
+    margin: auto;
+    text-transform: uppercase;
+}
+.line{
+    background-color:var(--mainColor);
+    height:3px;
+    display: block;
+    width: 100px;
+  margin:20px auto;
+  margin-bottom: 50px;
+  border-radius: 200px;
+
+}
+
+    
+.para{
+    color: var(--seccolor);
+    width: 33%;
+    font-size: 17px;
+    margin: auto;
+
+}
+
+
+
+.as{
+    margin: 30px auto;
+    padding:13px 40px;
+        text-decoration: none;
+        color: #fff;
+        display: inline-block;
+        background-color: var(--mainColor);
+        border-radius: 19px;
+        position: relative;
+    }
+    
+    
+    .header_content .overlay {
+        background: linear-gradient(to BOTTOM,rgba(0, 0, 0, 0.9)60%,rgba(88, 76, 7, 0.59) 100%);
+        height: 100%;
+    }
+
+  /* section */
+ 
+
+.add-products form{
+ 
+    max-width: 30rem; 
+ margin: 0px auto;
+    border:var(--border);
+    padding:1.2rem;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+ }
+ 
+ .add-products form h3{
+ 
+    font-size: 1.5rem;
+    color: rgba(20,20, 20);
+    font-family: var(--font2);
+    text-transform: uppercase;
+  
+ }
+ 
+ .add-products form .box{
+margin: 10px auto;
+    padding:0.6rem; 
+    color:var(--black);
+    border:var(--border);
+    font-size: 1.3rem;
+    width: 100%;
+    font-family: var(--font2);
+ 
+ }
+
+ .add-products form p{
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+    color:var(--light-color); 
+
+ }
+ 
+ .add-products form p a{
+    font-size: 2rem;
+    color:var(--mainColor);
+
+ }
+
+ 
+ .add-products form p a:hover{
+    color:var(--black);
+ } 
+ .add-products form .btn{
+    color: #222;
+    background-color: #fed330;
+     padding: .51rem 1rem; 
+    border: var(--border);
+    margin: auto;
+ }
